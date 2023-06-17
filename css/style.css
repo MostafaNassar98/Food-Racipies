@@ -1,0 +1,35 @@
+/* ==============Global========== */
+:root{
+    --header-color:rgb(45, 45, 77);
+    --heading-color:orange;
+}
+img{
+    height: 300px;
+}
+.orange{
+    color: var(--heading-color);
+}
+/* ================Header============== */
+header{
+    background-image: url(../img/home.png);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: 34%;
+    height: 70vh;
+    background-color: var(--header-color);
+}
+.head{
+    color: var(--heading-color);
+    position: relative;
+    margin: 30px 0px;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 2px;
+    background-color: var(--heading-color);
+}
